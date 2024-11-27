@@ -17,7 +17,7 @@ try:
 except Error as e:
     print(f"Error: {e}")
     messagebox.showerror("Database Connection Error", str(e))
-
+# the bank class
 class Bank:
     def __init__(self, account_number):
         self.account_number = account_number
@@ -47,7 +47,7 @@ class Bank:
 
     def get_balance(self):
         return self.balance
-
+# a subclass of the class bank 
 class Transaction(Bank):
     def __init__(self, account_number):
         super().__init__(account_number)
@@ -111,7 +111,7 @@ sender_entry.grid(row=0, column=1)
 receiver_entry.grid(row=1, column=1)
 amount_entry.grid(row=2, column=1)
 
-tk.Button(window, text="Deposit", command=deposit_amount).grid(row=3, column=0)
+
 tk.Button(window, text="Withdraw", command=withdraw_amount).grid(row=3, column=1)
 tk.Button(window, text="Transfer", command=transfer_amount).grid(row=3, column=2)
 

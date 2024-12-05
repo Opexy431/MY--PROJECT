@@ -6,10 +6,10 @@ from tkinter import messagebox
 # Connect to MySQL database
 try:
     conn = mysql.connector.connect(
-        host='your_host',       
-        database='your_database', 
+        host='root',       
+        database='account', 
         user='your_user',         
-        password='your_password'  
+        password=''  
     )
     if conn.is_connected():
         cursor = conn.cursor()

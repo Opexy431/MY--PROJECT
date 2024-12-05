@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaPA-BANK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        .form-section h2 {
+            font-size: 1.5em;
+            color: #16a085;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #16a085;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #13856d;
+        }
+
+        .balance-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .balance-section h2 {
+            font-size: 1.8em;
+            color: #b7631a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SaPA-BANK</h1>
+        </header>
+        <p> Welcome to SaPA-BANK.....! </p>
+        <main>
+            <section class="form-section">
+                <h2>Deposit</h2>
+                <form id="deposit-form">
+                    <label for="deposit-amount">Amount:</label>
+                    <input type="number" id="deposit-amount" required>
+                    <button type="submit">Deposit</button>
+                </form>
+            </section>
+
+            <section class="form-section">
+                <h2>Withdraw</h2>
+                <form id="withdraw-form">
+                    <label for="withdraw-amount">Amount:</label>
+                    <input type="number" id="withdraw-amount" required>
+                    <button type="submit">Withdraw</button>
+                </form>
+            </section>
+
+            <section class="form-section">
+                <h2>Transfer</h2>
+                <form id="transfer-form">
+                    <label for="transfer-to">Transfer To:</label>
+                    <input type="text" id="transfer-to" required>
+                    <label for="transfer-amount">Amount:</label>
+                    <input type="number" id="transfer-amount" required>
+                    <button type="submit">Transfer</button>
+                </form>
+            </section>
+
+            <section class="balance-section">
+                <h2>Current Balance: <span id="balance-amount">$0.00</span></h2>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

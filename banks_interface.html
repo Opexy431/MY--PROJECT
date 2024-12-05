@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaPA-BANK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style = 'background-color:rgb(177, 153, 153);'>
+    <div class="container">
+        <h1>Transactional-aspect</h1>
+        
+        <div class="form-section">
+            <h2>Deposit</h2>
+            <form id="deposit-form">
+                <label for="deposit-amount">Amount:</label>
+                <input type="number" id="deposit-amount" required>
+                <button type="submit">Deposit</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h2>Withdraw</h2>
+            <form id="withdraw-form">
+                <label for="withdraw-amount">Amount:</label>
+                <input type="number" id="withdraw-amount" required>
+                <button type="submit">Withdraw</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h2>Transfer</h2>
+            <form id="transfer-form">
+                <label for="transfer-to">Transfer To:</label>
+                <input type="text" id="transfer-to" required>
+                <label for="transfer-amount">Amount:</label>
+                <input type="number" id="transfer-amount" required>
+                <button type="submit">Transfer</button>
+            </form>
+        </div>
+
+        <div class="balance-section">
+            <h2>Current Balance: <span id="balance-amount">$0.00</span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

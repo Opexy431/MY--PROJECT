@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+{% block title %} SapaBank {% endblock title %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+    <p>{{shit}}</p>
+    <p>Your account balance: {{balance}}</p>
+    <a href="{% url 'logout' %}">Logout</a>
+{% else %}
+<p>Login mumu</p>
+{% endif %}
+
+{% endblock content %}
